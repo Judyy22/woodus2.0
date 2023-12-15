@@ -30,7 +30,7 @@ body {
     font-weight: 400 !important;
 }
 .FB {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 .FS-0 {
     font-size: min(1vh, 10px);
@@ -57,21 +57,21 @@ body {
 }
 
 .FS-6 {
-    font-size: min(2.24102vh, 16px);
+    font-size: min(2.24102vh, 20px);
 }
 
 .FS-7 {
-    font-size: min(2.54984vh, 17px);
+    font-size: min(2.54984vh, 25px);
 }
 
 .FS-8 {
-    font-size: min(1.95865vh, 18px);
+    font-size: min(1.95865vh, 30px);
 }
 
 .FS-9 {
-    font-size: min(2.06747vh, 19px);
+    font-size: min(2.06747vh, 40px);
 }
 
 .FS-10 {
-    font-size: min(2.17628vh, 20px);
+    font-size: min(2.17628vh, 50px);
 }
