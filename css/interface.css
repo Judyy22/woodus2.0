@@ -41,3 +41,17 @@ button {
 .woodus-C {
     padding: 2rem;
 }
+@media (max-width: 500px) {
+    .woodus-C {
+        padding: 1rem;
+    }
+    .woodus_tree {
+        max-width: 5%;
+    }
+    .line {
+        line-height: 2rem !important;
+    }
+    .FS-8 {
+        font-size: min(2.5vh, 30px) !important;
+    }
+}
