@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="/css/background.css" type="text/css" />
         <link rel="stylesheet" href="/css/font.css" type="text/css" />
         <link rel="stylesheet" href="/css/button.css" type="text/css" />
+        <link rel="stylesheet" href="/css/community.css" type="text/css" />
     </head>
     <body>
         <div class="woodus-A">
@@ -26,7 +27,21 @@
             <!-- contents -->
             <div class="woodus-B">
                 <div class="woodus-C">
-                    <div>커뮤니티</div>
+                    <section class="notice">
+                        <div class="page-title">
+                            <div class="container">
+                                <h3>공지사항</h3>
+                            </div>
+                        </div>
+
+                        <div id="board_list">
+                            <script>
+                                $("#board_list").load(
+                                    "/common_html/board_list.html"
+                                );
+                            </script>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
