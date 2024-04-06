@@ -1,3 +1,17 @@
+<header id="page-topbar">
+    <div class="navbar-header">
+        <div class="d-flex">
+            <button
+                type="button"
+                class="btn btn-sm px-3 font-size-16 header-item"
+                id="vertical-menu-btn"
+            >
+                <!-- <img src="/images/woodus-logo.png" alt="우드어스" width="100px"/> -->
+                <i class="fa fa-fw fa-bars" id="menu_list"></i>
+            </button>
+        </div>
+    </div>
+</header>
 <div class="vertical-menu">
     <div data-simplebar class="h-100">
         <!--- Sidemenu -->
@@ -10,12 +24,30 @@
                 <li>
                     <a href="index.html">
                         <!-- <i data-feather="home"></i> -->
-                        <span data-key="t-dashboard">Dashboard</span>
+                        <span data-key="t-dashboard">대시보드</span>
+                    </a>
+                </li>
+
+                <li class="menu-title" data-key="t-menu">프로그램</li>
+                <li>
+                    <a href="addProgram.html">
+                        <span data-key="t-dashboard">프로그램 추가</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="listProgram.html">
+                        <span data-key="t-dashboard">프로그램 수정/삭제</span>
+                    </a>
+                </li>
+                <li class="menu-title" data-key="t-menu">게시판</li>
+                <li>
+                    <a href="addProgram.html">
+                        <span data-key="t-dashboard">기업사회공헌</span>
                     </a>
                 </li>
                 <li>
                     <a href="addProgram.html">
-                        <span data-key="t-dashboard">프로그램 추가</span>
+                        <span data-key="t-dashboard">공지사항</span>
                     </a>
                 </li>
             </ul>

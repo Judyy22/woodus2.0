@@ -14,11 +14,6 @@
         <link rel="stylesheet" href="/css/font.css" type="text/css" />
         <link rel="stylesheet" href="/css/button.css" type="text/css" />
         <link rel="stylesheet" href="/css/community.css" type="text/css" />
-        <link
-            rel="stylesheet"
-            href="/common_html/board/board-list.css"
-            type="text/css"
-        />
     </head>
     <body>
         <div class="woodus-A">
@@ -35,7 +30,7 @@
                     <section class="notice">
                         <div class="page-title">
                             <div class="container">
-                                <h3>공지사항</h3>
+                                <h3>기업사회공헌</h3>
                             </div>
                         </div>
 
@@ -63,5 +58,38 @@
             type="text/javascript"
         ></script>
         <script src="/js/mobile/home.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: "http://woodus.net/api/contribution",
+                    method: "GET",
+                    success: function (response) {
+                        for (var i = 0; i < response.length; i++) {
+                            const list = response;
+                            var str =
+                                '<tr class="board_item_list" id="boardList">' +
+                                '<td class="th-num">' +
+                                list[i].id +
+                                "</td>" +
+                                '<th class="board_title">' +
+                                '<a href="/community/detail.html?notice_id=' +
+                                list[i].id +
+                                '">' +
+                                list[i].title +
+                                "</a>" +
+                                "</th>" +
+                                '<th class="board_date" style="text-align:center;">' +
+                                list[i].regdate +
+                                "</th>" +
+                                "</tr>";
+                            $("#boardList").append(str);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("AJAX 요청 실패:", status, error);
+                    },
+                });
+            });
+        </script>
     </body>
 </html>
