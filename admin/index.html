@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>우드어스_관리자</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            content="Premium Multipurpose Admin & Dashboard Template"
+            name="description"
+        />
+        <meta content="Themesbrand" name="author" />
+        <!-- jquery -->
+        <script src="/js/jquery-3.7.0.min.js"></script>
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- plugin css -->
+        <link
+            href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <!-- preloader css -->
+        <link
+            rel="stylesheet"
+            href="assets/css/preloader.min.css"
+            type="text/css"
+        />
+
+        <!-- Bootstrap Css -->
+        <link
+            href="assets/css/bootstrap.min.css"
+            id="bootstrap-style"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <!-- Icons Css -->
+        <link
+            href="assets/css/icons.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <!-- App Css-->
+        <link
+            href="assets/css/app.min.css"
+            id="app-style"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+
+    <body>
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <button
+                            type="button"
+                            class="btn btn-sm px-3 font-size-16 header-item"
+                            id="vertical-menu-btn"
+                        >
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div id="Submenu">
+                <script>
+                    $("#Submenu").load("/admin/common_html/menu.html");
+                </script>
+            </div>
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div
+                                    class="page-title-box d-sm-flex align-items-center justify-content-between"
+                                >
+                                    <h4 class="mb-sm-0 font-size-18">
+                                        Dashboard
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+            </div>
+            <!-- end main content-->
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

@@ -10,7 +10,7 @@ section.notice {
     margin-bottom: 60px;
 }
 .page-title h3 {
-    font-size: 28px;
+    /* font-size: 28px; */
     color: #333333;
     font-weight: 400;
     text-align: center;
@@ -167,8 +167,8 @@ section.notice {
     clear: both;
 }
 .container {
-    max-width: 1100px;
-    min-width: 350px;
+    /* max-width: 1100px;
+    min-width: 350px; */
     margin: 0 auto;
 }
 .blind {
@@ -178,4 +178,10 @@ section.notice {
     margin: -1px;
     width: 1px;
     height: 1px;
+}
+
+@media (max-width: 500px) {
+    .page-title {
+        margin-bottom: 20px;
+    }
 }
