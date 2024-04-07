@@ -33,13 +33,8 @@
                                 <h3>기업사회공헌</h3>
                             </div>
                         </div>
-
-                        <div id="board_list">
-                            <script>
-                                $("#board_list").load(
-                                    "/common_html/board/board_list.html"
-                                );
-                            </script>
+                        <div>
+                            <div class="row" id="contribution_card"></div>
                         </div>
                     </section>
                 </div>
@@ -66,23 +61,23 @@
                     success: function (response) {
                         for (var i = 0; i < response.length; i++) {
                             const list = response;
+                            console.log(list[i]);
                             var str =
-                                '<tr class="board_item_list" id="boardList">' +
-                                '<td class="th-num">' +
-                                list[i].id +
-                                "</td>" +
-                                '<th class="board_title">' +
-                                '<a href="/community/detail.html?notice_id=' +
-                                list[i].id +
-                                '">' +
+                                '<div class="col-sm-4" align="center">' +
+                                '<div class="card mb-3"  style="max-width:350px" align="left">' +
+                                '<img src="http://woodus.net/api/images/' +
+                                list[i].thumbnail_id +
+                                '" class="card-img-top" style="height:300px">' +
+                                '<div class="card-body">' +
+                                '<div class="card-text">' +
+                                '<div class="FS-6 FB" id="course_name">' +
                                 list[i].title +
-                                "</a>" +
-                                "</th>" +
-                                '<th class="board_date" style="text-align:center;">' +
-                                list[i].regdate +
-                                "</th>" +
-                                "</tr>";
-                            $("#boardList").append(str);
+                                "</div>" +
+                                list[i].subtitle +
+                                "</div>" +
+                                "</div>" +
+                                "</div>";
+                            $("#contribution_card").append(str);
                         }
                     },
                     error: function (xhr, status, error) {

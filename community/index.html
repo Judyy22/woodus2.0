@@ -39,12 +39,25 @@
                             </div>
                         </div>
 
-                        <div id="board_list">
-                            <script>
-                                $("#board_list").load(
-                                    "/common_html/board/board_list.html"
-                                );
-                            </script>
+                        <div id="board-list">
+                            <div class="container">
+                                <table class="board-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="th-num">
+                                                번호
+                                            </th>
+                                            <th scope="col" class="th-title">
+                                                제목
+                                            </th>
+                                            <th scope="col" class="th-date">
+                                                등록일
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="boardList"></tbody>
+                                </table>
+                            </div>
                         </div>
                     </section>
                 </div>
